@@ -1,0 +1,9 @@
+---
+flows:
+- steps:
+  - kind: endpoint
+    uri: twitter-mention-connector--KudpISqsPMI8xuflolb:MENTIONS
+  - kind: endpoint
+    uri: atlas:mapping-step-2.json
+  - kind: endpoint
+    uri: salesforce-upsert-sobject--KudpGnKsPMI8xuflola?sObjectIdName=TwitterScreenName__c&sObjectName=Contact
